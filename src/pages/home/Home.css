@@ -1,0 +1,23 @@
+.main {
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  align-content: center;
+  max-height: 40rem;
+  overflow: hidden;
+}
+
+.add-container {
+  width: 90%;
+}
+
+.main .modal {
+  position: fixed;
+  z-index: 2;
+}

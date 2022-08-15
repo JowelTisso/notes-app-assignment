@@ -1,0 +1,50 @@
+.card {
+  width: 31%;
+}
+
+.input-simple-title {
+  height: 3rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.input-simple-note {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.btn {
+  min-width: 6rem;
+  min-height: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.yellow {
+  background-color: var(--yellow-color);
+}
+.green {
+  background-color: var(--green-color);
+}
+.pink {
+  background-color: var(--pink-color);
+}
+.cyan {
+  background-color: var(--cyan-color);
+}
+
+.w-31 {
+  width: 31%;
+}
+
+.w-95 {
+  width: 95%;
+}

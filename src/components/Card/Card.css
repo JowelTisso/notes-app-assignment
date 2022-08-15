@@ -1,0 +1,42 @@
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-left {
+  display: flex;
+  flex: 1;
+}
+
+.btn-right {
+  display: flex;
+}
+
+.btn-circle {
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.title {
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.note {
+  overflow: hidden;
+  height: 5rem;
+}
+
+.btn-pin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+  margin: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
