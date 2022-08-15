@@ -32,7 +32,7 @@ const Home = () => {
         setNotes(res.data.notes);
       }
     } catch (err) {
-      toast.error("Unable to get notes! " + "Error: " + err.message);
+      toast.error(`Unable to get notes! Error: ${err.message}`);
     }
   };
 
@@ -46,7 +46,7 @@ const Home = () => {
         setTotalPage(pages);
       }
     } catch (err) {
-      toast.error("Unable to get pages! " + "Error: " + err.message);
+      toast.error(`Unable to get pages! Error: ${err.message}`);
     }
   };
 
@@ -79,7 +79,7 @@ const Home = () => {
       const res = await axios.delete(`${API.NOTES}/${id}`);
       if (res.status === 200) {
         getPages();
-        setNotes((list) => list.filter((item) => item.id != id));
+        setNotes((list) => list.filter((item) => item.id !== id));
         if (!isPinning) toast.success("Deleted successfully!");
       }
       setLoading(false);
@@ -145,7 +145,7 @@ const Home = () => {
       setLoading(true);
       const res = await axios.delete(`${API.PINNED}/${id}`);
       if (res.status === 200) {
-        setPinnedNotes((list) => list.filter((item) => item.id != id));
+        setPinnedNotes((list) => list.filter((item) => item.id !== id));
         const newNote = { ...note, pinned: false };
         saveNote(newNote);
         toast.success("Unpinned successfully!");
@@ -182,7 +182,7 @@ const Home = () => {
       setLoading(true);
       const res = await axios.delete(`${API.PINNED}/${id}`);
       if (res.status === 200) {
-        setPinnedNotes((list) => list.filter((item) => item.id != id));
+        setPinnedNotes((list) => list.filter((item) => item.id !== id));
         toast.success("Deleted successfully!");
       }
       setLoading(false);
@@ -220,7 +220,7 @@ const Home = () => {
           setPinnedNotes(res.data);
         }
       } catch (err) {
-        toast.error("Unable to get notes! " + "Error: " + err.message);
+        toast.error(`Unable to get pinned notes! Error: ${err.message}`);
       }
     })();
   }, []);
