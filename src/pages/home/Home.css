@@ -21,3 +21,11 @@
   position: fixed;
   z-index: 2;
 }
+
+@media screen and (max-width: 480px) {
+  .notes-container {
+    max-height: 100rem;
+    margin: auto;
+    justify-content: center;
+  }
+}
